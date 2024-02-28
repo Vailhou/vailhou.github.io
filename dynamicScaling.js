@@ -1,22 +1,36 @@
     // Update styles based on window size
     function updateStyles() {
+      const introduction = document.querySelector(".introduction");
       const section = document.querySelector(".section");
       const isPortrait = window.matchMedia("(orientation: portrait)").matches;
+      const headshot = document.querySelector("#headshot");
 
       if (screen.width > 600) {
         const screenWidth = window.screen.width;
 
         // Set the width as a percentage of the screen width
-        const widthPercentage = 40; // Set your desired percentage
+        const widthPercentage = 60; // Set your desired percentage
         section.style.width = `${(widthPercentage / 100) * screenWidth}px`;
       }
 
-      if (isPortrait) {
-        section.classList.add("portrait")
-        section.classList.remove("landscape")
+      if (window.innerWidth < 1000) {
+        introduction.classList.add("small-window")
+        introduction.classList.remove("large-window")
+
+        headshot.classList.add("small-window")
+        headshot.classList.remove("large-window")
       } else {
-        section.classList.add("landscape")
-        section.classList.remove("portrait")
+        introduction.classList.add("large-window")
+        introduction.classList.remove("small-window")
+
+        headshot.classList.add("large-window")
+        headshot.classList.remove("small-window")
+      }
+
+      if (isPortrait) {
+
+      } else {
+
       }
     }
 
