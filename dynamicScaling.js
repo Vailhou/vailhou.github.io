@@ -1,16 +1,25 @@
     // Update styles based on window size
     function updateStyles() {
-      const introduction = document.querySelector(".introduction");
-      const section = document.querySelector(".section");
-      const isPortrait = window.matchMedia("(orientation: portrait)").matches;
-      const headshot = document.querySelector("#headshot");
+      // Big screen text are width
+      const textWidthPercentage = 60
+      
+      const introduction = document.querySelector(".introduction")
+      const sections = document.querySelectorAll(".section")
+      const isPortrait = window.matchMedia("(orientation: portrait)").matches
+      const headshot = document.querySelector("#headshot")
 
       if (screen.width > 600) {
-        const screenWidth = window.screen.width;
+        const screenWidth = window.screen.width
 
         // Set the width as a percentage of the screen width
-        const widthPercentage = 60; // Set your desired percentage
-        section.style.width = `${(widthPercentage / 100) * screenWidth}px`;
+        const sectionWidth = `${(textWidthPercentage / 100) * screenWidth}px`
+
+        if (document.body.width < sectionWidth) {
+          sections.forEach(section => section.style.width = document.body.width)
+        } else {
+          sections.forEach(section => section.style.width = sectionWidth)
+        }
+
       }
 
       if (window.innerWidth < 1000) {
@@ -35,7 +44,7 @@
     }
 
     // Attach the updateStyles function to window resize event
-    window.addEventListener('resize', updateStyles);
+    window.addEventListener('resize', updateStyles)
 
     // Initial call to set styles on page load
-    window.addEventListener('load', updateStyles);
+    window.addEventListener('load', updateStyles)
