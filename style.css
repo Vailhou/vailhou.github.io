@@ -7,7 +7,7 @@ body {
   font-size: 18px;
   color: #D9D9D9;
   height: 100%;
-  background-color: #3C3C3C;
+  background-color: #20282e;
   text-wrap: wrap;
 }
 
@@ -28,7 +28,7 @@ hr {
   background-repeat: no-repeat;
   background-position: center 0;
   background-attachment: fixed;
-  opacity: 0.3;
+  opacity: 0.2;
   filter: alpha(opacity=30);
   filter: grayscale(40%);
   height: 100%;
@@ -116,18 +116,16 @@ a:active {
   margin-top: 20vh;
 }
 
-.paragraph-small {
-  font-size: 2vh;
-}
-
 .section {
   align-self: center;
-  flex: 1
+  flex: 1;
+  max-width: 1024px;
+  margin-left: 30px;
+  margin-right: 30px;
 }
 
 .section-bottom {
   margin-top: 0vh;
-  padding-top: 2vh;
   text-align: center;
 
   position: relative;
@@ -165,7 +163,7 @@ iframe {
 
 .introduction {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   margin: 0px;
   padding: 0px;
