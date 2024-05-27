@@ -47,25 +47,16 @@ hr {
 
 .area {
   margin-right: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
   display: flex;
   flex-direction: column;
   flex: 1;
-  /* display: inline-block; */
-  /* max-width: 85vw; */
-  /*background-color: rgba(89, 222, 255, 0.2);*/
-  background-image: linear-gradient(to right, #FFFFFF, #F4F2EE);
+  background-color: #FFFFFF;
   border-style: solid;
   border-width: 1px;
   border-color: #DFDEDA;
   border-radius: 10px;
-}
-
-.area h1,
-.area h2,
-.area p {
-  margin-left: 3vw;
-  padding: 1%;
-  padding-right: 2%;
 }
 
 header {
@@ -117,6 +108,7 @@ a:active {
   align-self: center;
   flex: 1;
   max-width: 1024px;
+  width: 100%;
   margin-left: 30px;
   margin-right: 30px;
   margin-bottom: 30px;
@@ -175,6 +167,7 @@ iframe {
   
   align-self: center;
   max-width: 1024px;
+  width: 100%;
   margin-left: 30px;
   margin-right: 30px;
   margin-bottom: 30px;
@@ -197,8 +190,8 @@ iframe {
 }
 
 #headshot {
-  margin-bottom: 10vh;
   max-width: 300px;
+  max-height: 300px;
   border-radius: 50%
 }
 
