@@ -15,6 +15,7 @@ body {
 
 p {
   text-wrap: wrap;
+  margin-bottom: 0px;
 }
 
 hr {
@@ -47,8 +48,7 @@ hr {
 
 .area {
   margin-right: 30px;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding: 25px;
   display: flex;
   flex-direction: column;
   flex: 1;
@@ -67,13 +67,22 @@ header {
 header h1 {
   font-size: 48px;
   margin-top: 0px;
-  line-height: 0%;
+  line-height: 0px;
   text-align: center;
 }
 
 header h2 {
   font-size: 36px;
   text-align: center;
+  margin-bottom: 36px;
+}
+
+h2 {
+  margin: 0px;
+}
+
+h3 {
+  margin: 0px;
 }
 
 a {
@@ -96,37 +105,52 @@ a:active {
   color: #EBF4FD;
 }
 
-.paragraph {
-  margin-bottom: 10vh;
+.image {
+  display: block;
+  background: #000;
+  border: none;
+  max-width: 622px;
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 15px;
 }
 
-#programmer {
-  margin-top: 20vh;
+.paragraph {
+  margin-bottom: 15px;
+  background-color: #FFFFFF;
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #DFDEDA;
+  border-radius: 10px;
+  max-width: 1024px;
+  width: 95%;
 }
 
 .section {
   align-self: center;
   flex: 1;
   max-width: 1024px;
-  width: 100%;
+  width: 95%;
   margin-left: 30px;
   margin-right: 30px;
   margin-bottom: 30px;
-  background-color: #FFFFFF;
-  padding-left: 30px;
-  padding-right: 30px;
-  border-style: solid;
-  border-width: 1px;
-  border-color: #DFDEDA;
-  border-radius: 10px
+}
+
+.section-header {
+  margin-top: 45px;
 }
 
 .section-bottom {
   padding-bottom: 30px;
+  padding-top: 30px;
   text-align: center;
   position: relative;
   display: inline-block;
-  width: 100%;
+  width: 95%;
   background-color: #F4F2EE;
 }
 
@@ -134,43 +158,23 @@ iframe {
   display: block;
   background: #000;
   border: none;
-  width: 622px;
+  max-width: 622px;
   height: 350px;
-  min-width: auto;
-  min-height: auto;
+  width: 100%;
   border-radius: 10px;
+  margin-top: 30px;
+  margin-bottom: 0px;
 }
-
-#img1 {
-  opacity: 1;
-  filter: alpha(opacity=100);
-  display: block;
-  width: 50vh;
-  float: right;
-  top: 0;
-  position: relative;
-  margin-right: 5%;
-}
-
-.image {
-  width: 300px;
-}
-
-.section.portrait {}
-
-.section.landscape {}
 
 .introduction {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  
   align-self: center;
   max-width: 1024px;
-  width: 100%;
+  width: 95%;
   margin-left: 30px;
   margin-right: 30px;
-  margin-bottom: 30px;
   padding: 30px;
   background-color: #FFFFFF;
   padding-left: 30px;
@@ -206,4 +210,5 @@ iframe {
 #links {
   display: flex;
   flex-direction: column;
+  margin-bottom: 15px;
 }
