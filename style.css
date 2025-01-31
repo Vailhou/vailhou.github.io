@@ -1,7 +1,14 @@
 @charset "utf-8";
 
 html,
+
+header {
+  margin-bottom: 64px;
+  text-align: center;
+}
+
 body {
+  text-align: left;
   font-family: "Source Sans 3", sans-serif;
   font-optical-sizing: none;
   font-weight: normal;
@@ -66,6 +73,7 @@ header {
 header h1 {
   font-size: 48px;
   margin-top: 0px;
+  margin-bottom: 48px;
   line-height: 0px;
   text-align: center;
 }
